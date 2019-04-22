@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="VideoViewCell" rowHeight="106" id="GOY-G9-mq1" customClass="VideoViewCell" customModule="VideoFace" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="106"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GOY-G9-mq1" id="hGT-U3-x33">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="105.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VWc-j1-9Qa">
+                        <rect key="frame" x="15" y="8" width="160" height="90"/>
+                        <color key="backgroundColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="7jC-Gv-i8S"/>
+                            <constraint firstAttribute="width" constant="160" id="cXH-3t-Ekd"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xoa-s4-7Ei">
+                        <rect key="frame" x="131" y="75" width="39" height="18"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mlq-fc-V8p">
+                                <rect key="frame" x="3" y="2" width="32" height="14"/>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69737264554794531" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Mlq-fc-V8p" secondAttribute="trailing" constant="4" id="0Af-9W-UnG"/>
+                            <constraint firstItem="Mlq-fc-V8p" firstAttribute="top" secondItem="xoa-s4-7Ei" secondAttribute="top" constant="2" id="FmM-2y-85n"/>
+                            <constraint firstItem="Mlq-fc-V8p" firstAttribute="leading" secondItem="xoa-s4-7Ei" secondAttribute="leading" constant="3" id="Kac-PA-r6i"/>
+                            <constraint firstAttribute="bottom" secondItem="Mlq-fc-V8p" secondAttribute="bottom" constant="2" id="iFB-DZ-T9k"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7Y-L2-CGH">
+                        <rect key="frame" x="190" y="8" width="395" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BI9-dH-hHU">
+                        <rect key="frame" x="190" y="28.5" width="395" height="14.5"/>
+                        <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnb-xM-K9R">
+                        <rect key="frame" x="190" y="47" width="395" height="14.5"/>
+                        <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VWc-j1-9Qa" firstAttribute="leading" secondItem="hGT-U3-x33" secondAttribute="leading" constant="15" id="2KU-5q-rlC"/>
+                    <constraint firstItem="VWc-j1-9Qa" firstAttribute="bottom" secondItem="xoa-s4-7Ei" secondAttribute="bottom" constant="5" id="2nN-lJ-bm5"/>
+                    <constraint firstItem="Pnb-xM-K9R" firstAttribute="trailing" secondItem="g7Y-L2-CGH" secondAttribute="trailing" id="54k-by-nK9"/>
+                    <constraint firstAttribute="trailing" secondItem="g7Y-L2-CGH" secondAttribute="trailing" constant="15" id="62n-JW-zFe"/>
+                    <constraint firstItem="VWc-j1-9Qa" firstAttribute="centerY" secondItem="hGT-U3-x33" secondAttribute="centerY" id="73H-qq-Omr"/>
+                    <constraint firstItem="BI9-dH-hHU" firstAttribute="leading" secondItem="g7Y-L2-CGH" secondAttribute="leading" id="NzD-YW-Wh6"/>
+                    <constraint firstItem="g7Y-L2-CGH" firstAttribute="leading" secondItem="VWc-j1-9Qa" secondAttribute="trailing" constant="15" id="OyS-nt-H17"/>
+                    <constraint firstItem="VWc-j1-9Qa" firstAttribute="trailing" secondItem="xoa-s4-7Ei" secondAttribute="trailing" constant="5" id="Uzm-3v-RZt"/>
+                    <constraint firstItem="Pnb-xM-K9R" firstAttribute="top" secondItem="BI9-dH-hHU" secondAttribute="bottom" constant="4" id="eLn-Le-ESZ"/>
+                    <constraint firstItem="BI9-dH-hHU" firstAttribute="top" secondItem="g7Y-L2-CGH" secondAttribute="bottom" constant="4" id="oIb-6f-Mfh"/>
+                    <constraint firstItem="g7Y-L2-CGH" firstAttribute="top" secondItem="VWc-j1-9Qa" secondAttribute="top" id="yAF-zE-DxG"/>
+                    <constraint firstItem="Pnb-xM-K9R" firstAttribute="leading" secondItem="g7Y-L2-CGH" secondAttribute="leading" id="za9-ko-QMR"/>
+                    <constraint firstItem="BI9-dH-hHU" firstAttribute="trailing" secondItem="g7Y-L2-CGH" secondAttribute="trailing" id="zwu-Au-R2t"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="channelLabel" destination="BI9-dH-hHU" id="9ud-cL-33X"/>
+                <outlet property="detailsLabel" destination="Pnb-xM-K9R" id="f5e-YB-jyj"/>
+                <outlet property="durationBackgroundView" destination="xoa-s4-7Ei" id="Azc-AY-s8i"/>
+                <outlet property="durationLabel" destination="Mlq-fc-V8p" id="Ykg-nQ-e5C"/>
+                <outlet property="thumbnailView" destination="VWc-j1-9Qa" id="RDA-Tv-au6"/>
+                <outlet property="titleLabel" destination="g7Y-L2-CGH" id="gpv-Yy-1EW"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="67"/>
+        </tableViewCell>
+    </objects>
+</document>

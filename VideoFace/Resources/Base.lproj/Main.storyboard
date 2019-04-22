@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7gN-cH-s5L">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Video Stats View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="VideoStatsViewController" id="BYZ-38-t0r" customClass="VideoStatsViewController" customModule="VideoFace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnL-yU-OAe" userLabel="Player Container View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qB-AK-j4o" userLabel="Player View" customClass="WKYTPlayerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="7qB-AK-j4o" firstAttribute="leading" secondItem="vnL-yU-OAe" secondAttribute="leading" id="OcF-82-fZ2"/>
+                                    <constraint firstAttribute="trailing" secondItem="7qB-AK-j4o" secondAttribute="trailing" id="Slq-Ug-gCJ"/>
+                                    <constraint firstItem="7qB-AK-j4o" firstAttribute="top" secondItem="vnL-yU-OAe" secondAttribute="top" id="e3z-m1-ncP"/>
+                                    <constraint firstAttribute="bottom" secondItem="7qB-AK-j4o" secondAttribute="bottom" id="oQj-qL-qtG"/>
+                                    <constraint firstAttribute="width" secondItem="vnL-yU-OAe" secondAttribute="height" multiplier="16:9" id="zXb-AP-JXT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IE9-TX-veY" userLabel="Stats View">
+                                <rect key="frame" x="0.0" y="211" width="375" height="456"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vnL-yU-OAe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3a5-j5-av3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IE9-TX-veY" secondAttribute="bottom" id="CX7-z7-Dw3"/>
+                            <constraint firstItem="IE9-TX-veY" firstAttribute="top" secondItem="vnL-yU-OAe" secondAttribute="bottom" id="DSg-SB-jSd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IE9-TX-veY" secondAttribute="trailing" id="EdM-QW-J66"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vnL-yU-OAe" secondAttribute="trailing" id="Ne3-i1-BnF"/>
+                            <constraint firstItem="IE9-TX-veY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ocm-71-npU"/>
+                            <constraint firstItem="vnL-yU-OAe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pux-Pd-Ugt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="playerView" destination="7qB-AK-j4o" id="bHl-e8-QRS"/>
+                        <outlet property="statView" destination="IE9-TX-veY" id="Lwg-cG-yrB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92" y="27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="D2J-1a-Oy0">
+            <objects>
+                <viewController id="7gN-cH-s5L" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Urb-tg-1wd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="SOU-wH-4Ud"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gey-vJ-QyD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="767" y="27"/>
+        </scene>
+    </scenes>
+</document>

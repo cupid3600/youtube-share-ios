@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmotionCell" rowHeight="50" id="fh4-3g-U2D" customClass="EmotionCell" customModule="VideoFace" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fh4-3g-U2D" id="VFv-2n-2M1">
+                <rect key="frame" x="0.0" y="0.0" width="388" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ak-vy-4dr" userLabel="Emoji View">
+                        <rect key="frame" x="12" y="10" width="29.5" height="29.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T18-Iy-Rlo" userLabel="Circle">
+                                <rect key="frame" x="0.0" y="0.0" width="29.5" height="29.5"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="T18-Iy-Rlo" secondAttribute="height" multiplier="1:1" id="JTd-Zx-p9c"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="twh-Mw-pbM" userLabel="Emoji Container">
+                                <rect key="frame" x="4" y="4" width="21.5" height="21.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="T18-Iy-Rlo" secondAttribute="trailing" id="ATM-rO-UQj"/>
+                            <constraint firstItem="T18-Iy-Rlo" firstAttribute="top" secondItem="3ak-vy-4dr" secondAttribute="top" id="Fps-dE-yPn"/>
+                            <constraint firstItem="T18-Iy-Rlo" firstAttribute="leading" secondItem="3ak-vy-4dr" secondAttribute="leading" id="MBj-cN-x67"/>
+                            <constraint firstItem="twh-Mw-pbM" firstAttribute="leading" secondItem="T18-Iy-Rlo" secondAttribute="leading" constant="4" id="NZd-vZ-WbD"/>
+                            <constraint firstAttribute="bottom" secondItem="T18-Iy-Rlo" secondAttribute="bottom" id="btt-ff-6c9"/>
+                            <constraint firstItem="twh-Mw-pbM" firstAttribute="top" secondItem="T18-Iy-Rlo" secondAttribute="top" constant="4" id="cQq-eB-uKF"/>
+                            <constraint firstItem="twh-Mw-pbM" firstAttribute="bottom" secondItem="T18-Iy-Rlo" secondAttribute="bottom" constant="-4" id="dHw-ix-iWo"/>
+                            <constraint firstItem="twh-Mw-pbM" firstAttribute="trailing" secondItem="T18-Iy-Rlo" secondAttribute="trailing" constant="-4" id="rpK-yj-Dk0"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwe-sE-Wnz">
+                        <rect key="frame" x="53.5" y="15" width="63" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3ak-vy-4dr" secondAttribute="bottom" constant="10" id="8UU-Z6-EhD"/>
+                    <constraint firstItem="3ak-vy-4dr" firstAttribute="top" secondItem="VFv-2n-2M1" secondAttribute="top" constant="10" id="LLW-fn-BH2"/>
+                    <constraint firstItem="Dwe-sE-Wnz" firstAttribute="leading" secondItem="3ak-vy-4dr" secondAttribute="trailing" constant="12" id="gLZ-ZP-ESD"/>
+                    <constraint firstItem="3ak-vy-4dr" firstAttribute="leading" secondItem="VFv-2n-2M1" secondAttribute="leading" constant="12" id="gr4-kv-cMu"/>
+                    <constraint firstItem="Dwe-sE-Wnz" firstAttribute="centerY" secondItem="3ak-vy-4dr" secondAttribute="centerY" id="pbl-WO-UcQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="emojiCircle" destination="T18-Iy-Rlo" id="u9O-rr-gb4"/>
+                <outlet property="emojiContainer" destination="twh-Mw-pbM" id="n1b-2r-xjZ"/>
+                <outlet property="emotionLabel" destination="Dwe-sE-Wnz" id="mcm-x2-A67"/>
+            </connections>
+            <point key="canvasLocation" x="68" y="14"/>
+        </tableViewCell>
+    </objects>
+</document>

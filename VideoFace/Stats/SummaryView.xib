@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-ExtraBold.ttf">
+            <string>Raleway-ExtraBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SummaryView" customModule="VideoFace" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="560" height="425"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="N4c-pD-xZC" userLabel="Emotions">
+                    <rect key="frame" x="0.0" y="0.0" width="560" height="113"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="S6I-1c-aT6">
+                            <rect key="frame" x="0.0" y="0.0" width="85" height="113"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6sP-lS-bMf" userLabel="Top">
+                                    <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pxe-UT-1kD" userLabel="Progress" customClass="UICircularProgressRing" customModule="UICircularProgressRing">
+                                            <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <viewLayoutGuide key="safeArea" id="BaJ-f2-EtI"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="6sP-lS-bMf" secondAttribute="height" multiplier="1:1" id="I3S-fJ-fDB"/>
+                                        <constraint firstItem="pxe-UT-1kD" firstAttribute="top" secondItem="6sP-lS-bMf" secondAttribute="top" id="SJb-20-Ssy"/>
+                                        <constraint firstAttribute="trailing" secondItem="pxe-UT-1kD" secondAttribute="trailing" id="YuX-Mj-Bdg"/>
+                                        <constraint firstItem="pxe-UT-1kD" firstAttribute="leading" secondItem="6sP-lS-bMf" secondAttribute="leading" id="izq-DG-ZYl"/>
+                                        <constraint firstAttribute="bottom" secondItem="pxe-UT-1kD" secondAttribute="bottom" id="tmL-CO-nUL"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDK-gI-8Ip" userLabel="Down">
+                                    <rect key="frame" x="0.0" y="89" width="85" height="24"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IbG-wC-eLC">
+                                            <rect key="frame" x="0.0" y="4.5" width="85" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="mBK-sw-MGm"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="IbG-wC-eLC" firstAttribute="width" secondItem="EDK-gI-8Ip" secondAttribute="width" id="DwU-78-3xA"/>
+                                        <constraint firstItem="IbG-wC-eLC" firstAttribute="centerX" secondItem="EDK-gI-8Ip" secondAttribute="centerX" id="gn0-7H-KHX"/>
+                                        <constraint firstItem="IbG-wC-eLC" firstAttribute="centerY" secondItem="EDK-gI-8Ip" secondAttribute="centerY" id="qcz-nN-eAs"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eB1-Fq-oJ3">
+                            <rect key="frame" x="95" y="0.0" width="85" height="113"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tsz-lr-N10" userLabel="Top">
+                                    <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iW8-Oq-Dof" userLabel="Progress" customClass="UICircularProgressRing" customModule="UICircularProgressRing">
+                                            <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <viewLayoutGuide key="safeArea" id="FnV-a5-u6E"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="iW8-Oq-Dof" secondAttribute="bottom" id="eA1-Vn-lfi"/>
+                                        <constraint firstItem="iW8-Oq-Dof" firstAttribute="top" secondItem="tsz-lr-N10" secondAttribute="top" id="eXt-XO-JpZ"/>
+                                        <constraint firstItem="iW8-Oq-Dof" firstAttribute="leading" secondItem="tsz-lr-N10" secondAttribute="leading" id="fhY-6G-JG6"/>
+                                        <constraint firstAttribute="trailing" secondItem="iW8-Oq-Dof" secondAttribute="trailing" id="vuj-VH-bes"/>
+                                        <constraint firstAttribute="width" secondItem="tsz-lr-N10" secondAttribute="height" multiplier="1:1" id="wJm-Tm-l0K"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ao4-li-0Lx" userLabel="Down">
+                                    <rect key="frame" x="0.0" y="89" width="85" height="24"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="k0c-st-AM7">
+                                            <rect key="frame" x="0.0" y="4.5" width="85" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="vbs-Da-dJw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="1nT-jC-hHS"/>
+                                        <constraint firstItem="k0c-st-AM7" firstAttribute="centerX" secondItem="ao4-li-0Lx" secondAttribute="centerX" id="3SB-PH-wnc"/>
+                                        <constraint firstItem="k0c-st-AM7" firstAttribute="centerY" secondItem="ao4-li-0Lx" secondAttribute="centerY" id="n2a-Dc-BbW"/>
+                                        <constraint firstItem="k0c-st-AM7" firstAttribute="width" secondItem="ao4-li-0Lx" secondAttribute="width" id="szG-qn-pf5"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="c8d-MU-sCf">
+                            <rect key="frame" x="190" y="0.0" width="85" height="113"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acQ-Z7-bsl" userLabel="Top">
+                                    <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPA-OM-1Ah" userLabel="Progress" customClass="UICircularProgressRing" customModule="UICircularProgressRing">
+                                            <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <viewLayoutGuide key="safeArea" id="0fh-DT-fi7"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="FPA-OM-1Ah" firstAttribute="top" secondItem="acQ-Z7-bsl" secondAttribute="top" id="CHr-nu-KCM"/>
+                                        <constraint firstAttribute="width" priority="750" constant="70" id="Db5-ua-8CC"/>
+                                        <constraint firstAttribute="trailing" secondItem="FPA-OM-1Ah" secondAttribute="trailing" id="H8A-Sq-pJd"/>
+                                        <constraint firstItem="FPA-OM-1Ah" firstAttribute="leading" secondItem="acQ-Z7-bsl" secondAttribute="leading" id="N58-10-JBo"/>
+                                        <constraint firstAttribute="width" secondItem="acQ-Z7-bsl" secondAttribute="height" multiplier="1:1" id="V9o-xg-w3A"/>
+                                        <constraint firstAttribute="bottom" secondItem="FPA-OM-1Ah" secondAttribute="bottom" id="tRe-Tn-wRc"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vVt-ra-jbM" userLabel="Down">
+                                    <rect key="frame" x="0.0" y="89" width="85" height="24"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="toQ-Qb-tLJ">
+                                            <rect key="frame" x="0.0" y="4.5" width="85" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="s6n-tU-bev"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="toQ-Qb-tLJ" firstAttribute="centerY" secondItem="vVt-ra-jbM" secondAttribute="centerY" id="7Im-Va-HOh"/>
+                                        <constraint firstAttribute="height" constant="24" id="FzZ-E4-5Pr"/>
+                                        <constraint firstItem="toQ-Qb-tLJ" firstAttribute="width" secondItem="vVt-ra-jbM" secondAttribute="width" id="Hti-we-OGp"/>
+                                        <constraint firstItem="toQ-Qb-tLJ" firstAttribute="centerX" secondItem="vVt-ra-jbM" secondAttribute="centerX" id="bON-0T-3jg"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Y4z-gW-r1L">
+                            <rect key="frame" x="285" y="0.0" width="85" height="113"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jp-mH-FoW" userLabel="Top">
+                                    <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Pl-WA-nK7" userLabel="Progress" customClass="UICircularProgressRing" customModule="UICircularProgressRing">
+                                            <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <viewLayoutGuide key="safeArea" id="I14-Q5-OgZ"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="3Pl-WA-nK7" firstAttribute="leading" secondItem="6jp-mH-FoW" secondAttribute="leading" id="cdj-ZX-dgD"/>
+                                        <constraint firstAttribute="width" secondItem="6jp-mH-FoW" secondAttribute="height" multiplier="1:1" id="jLm-PK-bT6"/>
+                                        <constraint firstAttribute="bottom" secondItem="3Pl-WA-nK7" secondAttribute="bottom" id="jwY-as-KvQ"/>
+                                        <constraint firstItem="3Pl-WA-nK7" firstAttribute="top" secondItem="6jp-mH-FoW" secondAttribute="top" id="lfy-Jw-nzV"/>
+                                        <constraint firstAttribute="width" priority="750" constant="70" id="mGD-6m-6Qg"/>
+                                        <constraint firstAttribute="trailing" secondItem="3Pl-WA-nK7" secondAttribute="trailing" id="nWo-5d-KZM"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhy-DN-5Kz" userLabel="Down">
+                                    <rect key="frame" x="0.0" y="89" width="85" height="24"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kGX-XR-QnB">
+                                            <rect key="frame" x="0.0" y="4.5" width="85" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="cJa-sd-6Ph"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="kGX-XR-QnB" firstAttribute="centerX" secondItem="yhy-DN-5Kz" secondAttribute="centerX" id="0aM-tj-LMV"/>
+                                        <constraint firstItem="kGX-XR-QnB" firstAttribute="width" secondItem="yhy-DN-5Kz" secondAttribute="width" id="5Vs-Z1-FVI"/>
+                                        <constraint firstAttribute="height" constant="24" id="S91-cw-IP0"/>
+                                        <constraint firstItem="kGX-XR-QnB" firstAttribute="centerY" secondItem="yhy-DN-5Kz" secondAttribute="centerY" id="SPN-nq-cSL"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="KLe-Oo-Bbi">
+                            <rect key="frame" x="380" y="0.0" width="85" height="113"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBb-NM-iFz" userLabel="Top">
+                                    <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cs5-Rs-Q8J" userLabel="Progress" customClass="UICircularProgressRing" customModule="UICircularProgressRing">
+                                            <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <viewLayoutGuide key="safeArea" id="zvV-Qp-xg1"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Cs5-Rs-Q8J" firstAttribute="top" secondItem="gBb-NM-iFz" secondAttribute="top" id="1Mf-Ld-CPV"/>
+                                        <constraint firstAttribute="bottom" secondItem="Cs5-Rs-Q8J" secondAttribute="bottom" id="DhO-St-mYB"/>
+                                        <constraint firstAttribute="width" secondItem="gBb-NM-iFz" secondAttribute="height" multiplier="1:1" id="HHq-lc-0gN"/>
+                                        <constraint firstItem="Cs5-Rs-Q8J" firstAttribute="leading" secondItem="gBb-NM-iFz" secondAttribute="leading" id="Jdt-ad-tq3"/>
+                                        <constraint firstAttribute="trailing" secondItem="Cs5-Rs-Q8J" secondAttribute="trailing" id="RvL-yD-ijs"/>
+                                        <constraint firstAttribute="width" priority="750" constant="70" id="cFn-0q-RlT"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nih-Eh-Uqd" userLabel="Down">
+                                    <rect key="frame" x="0.0" y="89" width="85" height="24"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eO5-No-MgG">
+                                            <rect key="frame" x="0.0" y="4.5" width="85" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="chM-Zz-r4c"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="9h8-LR-CGY"/>
+                                        <constraint firstItem="eO5-No-MgG" firstAttribute="centerY" secondItem="nih-Eh-Uqd" secondAttribute="centerY" id="JE6-5O-Fnj"/>
+                                        <constraint firstItem="eO5-No-MgG" firstAttribute="centerX" secondItem="nih-Eh-Uqd" secondAttribute="centerX" id="Sy1-Ge-N42"/>
+                                        <constraint firstItem="eO5-No-MgG" firstAttribute="width" secondItem="nih-Eh-Uqd" secondAttribute="width" id="nlH-h9-rsm"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tUp-IP-23d">
+                            <rect key="frame" x="475" y="0.0" width="85" height="113"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ETW-qR-3go" userLabel="Top">
+                                    <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1U-Fw-fhj" userLabel="Progress" customClass="UICircularProgressRing" customModule="UICircularProgressRing">
+                                            <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <viewLayoutGuide key="safeArea" id="Pp5-qW-IE9"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="g1U-Fw-fhj" firstAttribute="top" secondItem="ETW-qR-3go" secondAttribute="top" id="0qB-Sc-kJl"/>
+                                        <constraint firstItem="g1U-Fw-fhj" firstAttribute="leading" secondItem="ETW-qR-3go" secondAttribute="leading" id="2B7-OO-UkP"/>
+                                        <constraint firstAttribute="bottom" secondItem="g1U-Fw-fhj" secondAttribute="bottom" id="8BA-fd-rOl"/>
+                                        <constraint firstAttribute="trailing" secondItem="g1U-Fw-fhj" secondAttribute="trailing" id="HNr-dG-KWv"/>
+                                        <constraint firstAttribute="width" secondItem="ETW-qR-3go" secondAttribute="height" multiplier="1:1" id="YPe-Cl-WQS"/>
+                                        <constraint firstAttribute="width" priority="750" constant="70" id="zso-ZP-cYZ"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jrW-8J-cLj" userLabel="Down">
+                                    <rect key="frame" x="0.0" y="89" width="85" height="24"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9ya-af-fNv">
+                                            <rect key="frame" x="0.0" y="4.5" width="85" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="4oC-OS-Iny"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="4u7-qT-vAw"/>
+                                        <constraint firstItem="9ya-af-fNv" firstAttribute="centerY" secondItem="jrW-8J-cLj" secondAttribute="centerY" id="TAp-ri-EKY"/>
+                                        <constraint firstItem="9ya-af-fNv" firstAttribute="width" secondItem="jrW-8J-cLj" secondAttribute="width" id="gLj-fr-Yfx"/>
+                                        <constraint firstItem="9ya-af-fNv" firstAttribute="centerX" secondItem="jrW-8J-cLj" secondAttribute="centerX" id="ziQ-Rg-rZw"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cdJ-JS-aE7" userLabel="Ages">
+                    <rect key="frame" x="95" y="156" width="370" height="113"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eSz-2g-xu5">
+                            <rect key="frame" x="0.0" y="0.0" width="85" height="113"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V0H-FN-Vzh" userLabel="Top">
+                                    <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h37-ht-2OH" userLabel="Progress" customClass="UICircularProgressRing" customModule="UICircularProgressRing">
+                                            <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <viewLayoutGuide key="safeArea" id="fFt-fi-eD8"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="h37-ht-2OH" firstAttribute="leading" secondItem="V0H-FN-Vzh" secondAttribute="leading" id="WeM-oB-6TC"/>
+                                        <constraint firstItem="h37-ht-2OH" firstAttribute="top" secondItem="V0H-FN-Vzh" secondAttribute="top" id="dmD-DV-oxN"/>
+                                        <constraint firstAttribute="width" secondItem="V0H-FN-Vzh" secondAttribute="height" multiplier="1:1" id="eJ8-3o-wKK"/>
+                                        <constraint firstAttribute="bottom" secondItem="h37-ht-2OH" secondAttribute="bottom" id="nsO-dr-6LQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="h37-ht-2OH" secondAttribute="trailing" id="s63-Ak-E5n"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N1v-Xo-D9U" userLabel="Down">
+                                    <rect key="frame" x="0.0" y="89" width="85" height="24"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JBw-un-Vlc">
+                                            <rect key="frame" x="0.0" y="4.5" width="85" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="ySr-lh-LQ9"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="JBw-un-Vlc" firstAttribute="width" secondItem="N1v-Xo-D9U" secondAttribute="width" id="9NN-DO-Bxe"/>
+                                        <constraint firstAttribute="height" constant="24" id="Pwz-6R-EuJ"/>
+                                        <constraint firstItem="JBw-un-Vlc" firstAttribute="centerX" secondItem="N1v-Xo-D9U" secondAttribute="centerX" id="c84-aO-QON"/>
+                                        <constraint firstItem="JBw-un-Vlc" firstAttribute="centerY" secondItem="N1v-Xo-D9U" secondAttribute="centerY" id="lSK-gQ-kki"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="F5J-wE-WZg">
+                            <rect key="frame" x="95" y="0.0" width="85" height="113"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lWd-MG-kh8" userLabel="Top">
+                                    <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfN-1K-SWl" userLabel="Progress" customClass="UICircularProgressRing" customModule="UICircularProgressRing">
+                                            <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <viewLayoutGuide key="safeArea" id="Rdn-hi-LkO"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="zfN-1K-SWl" secondAttribute="trailing" id="0Kc-Se-4vA"/>
+                                        <constraint firstAttribute="bottom" secondItem="zfN-1K-SWl" secondAttribute="bottom" id="2uP-cD-ybn"/>
+                                        <constraint firstItem="zfN-1K-SWl" firstAttribute="leading" secondItem="lWd-MG-kh8" secondAttribute="leading" id="3Wr-M5-S4N"/>
+                                        <constraint firstItem="zfN-1K-SWl" firstAttribute="top" secondItem="lWd-MG-kh8" secondAttribute="top" id="4UL-ZS-Ulp"/>
+                                        <constraint firstAttribute="width" priority="750" constant="70" id="5mS-VQ-012"/>
+                                        <constraint firstAttribute="width" secondItem="lWd-MG-kh8" secondAttribute="height" multiplier="1:1" id="VOB-St-I66"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOg-TQ-cIJ" userLabel="Down">
+                                    <rect key="frame" x="0.0" y="89" width="85" height="24"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18-35" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WoO-Rn-DTT">
+                                            <rect key="frame" x="0.0" y="4.5" width="85" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="ivj-8j-FX8"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="8eK-J2-Pwd"/>
+                                        <constraint firstItem="WoO-Rn-DTT" firstAttribute="centerY" secondItem="eOg-TQ-cIJ" secondAttribute="centerY" id="DFC-Ff-V9c"/>
+                                        <constraint firstItem="WoO-Rn-DTT" firstAttribute="centerX" secondItem="eOg-TQ-cIJ" secondAttribute="centerX" id="acy-3j-TCN"/>
+                                        <constraint firstItem="WoO-Rn-DTT" firstAttribute="width" secondItem="eOg-TQ-cIJ" secondAttribute="width" id="koj-Tj-dLF"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="bJR-oH-31F">
+                            <rect key="frame" x="190" y="0.0" width="85" height="113"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JwA-bq-tr4" userLabel="Top">
+                                    <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z7Z-5L-yNe" userLabel="Progress" customClass="UICircularProgressRing" customModule="UICircularProgressRing">
+                                            <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <viewLayoutGuide key="safeArea" id="qp9-vm-nKx"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" priority="750" constant="70" id="4Yv-FX-IMc"/>
+                                        <constraint firstAttribute="trailing" secondItem="Z7Z-5L-yNe" secondAttribute="trailing" id="G8F-g0-eHj"/>
+                                        <constraint firstItem="Z7Z-5L-yNe" firstAttribute="top" secondItem="JwA-bq-tr4" secondAttribute="top" id="KKn-EK-viG"/>
+                                        <constraint firstAttribute="width" secondItem="JwA-bq-tr4" secondAttribute="height" multiplier="1:1" id="RhE-jL-Bp8"/>
+                                        <constraint firstItem="Z7Z-5L-yNe" firstAttribute="leading" secondItem="JwA-bq-tr4" secondAttribute="leading" id="nF6-fJ-ppR"/>
+                                        <constraint firstAttribute="bottom" secondItem="Z7Z-5L-yNe" secondAttribute="bottom" id="tCK-6b-blO"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ByQ-uL-lQd" userLabel="Down">
+                                    <rect key="frame" x="0.0" y="89" width="85" height="24"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35-54" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cEi-TX-c1Z">
+                                            <rect key="frame" x="0.0" y="4.5" width="85" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="L90-aO-kul"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="cEi-TX-c1Z" firstAttribute="centerY" secondItem="ByQ-uL-lQd" secondAttribute="centerY" id="G2d-4m-LiH"/>
+                                        <constraint firstItem="cEi-TX-c1Z" firstAttribute="centerX" secondItem="ByQ-uL-lQd" secondAttribute="centerX" id="LbR-k9-K5U"/>
+                                        <constraint firstItem="cEi-TX-c1Z" firstAttribute="width" secondItem="ByQ-uL-lQd" secondAttribute="width" id="aEL-Pf-Zwe"/>
+                                        <constraint firstAttribute="height" constant="24" id="czs-tR-CWb"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="MKH-Fc-A29">
+                            <rect key="frame" x="285" y="0.0" width="85" height="113"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjO-ju-lcy" userLabel="Top">
+                                    <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZpT-Yx-9Wh" userLabel="Progress" customClass="UICircularProgressRing" customModule="UICircularProgressRing">
+                                            <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <viewLayoutGuide key="safeArea" id="C5r-vc-Mmy"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="cjO-ju-lcy" secondAttribute="height" multiplier="1:1" id="3Yf-Wn-7YD"/>
+                                        <constraint firstAttribute="trailing" secondItem="ZpT-Yx-9Wh" secondAttribute="trailing" id="Rco-DI-tbr"/>
+                                        <constraint firstAttribute="bottom" secondItem="ZpT-Yx-9Wh" secondAttribute="bottom" id="SEC-Gr-JY8"/>
+                                        <constraint firstItem="ZpT-Yx-9Wh" firstAttribute="leading" secondItem="cjO-ju-lcy" secondAttribute="leading" id="Sst-fy-HgA"/>
+                                        <constraint firstAttribute="width" priority="750" constant="70" id="VwB-We-Ojc"/>
+                                        <constraint firstItem="ZpT-Yx-9Wh" firstAttribute="top" secondItem="cjO-ju-lcy" secondAttribute="top" id="gDY-Fm-aSQ"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Op8-4T-5Ln" userLabel="Down">
+                                    <rect key="frame" x="0.0" y="89" width="85" height="24"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;54" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="W47-ge-FGo">
+                                            <rect key="frame" x="0.0" y="4.5" width="85" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="MrJ-eT-EN9"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="W47-ge-FGo" firstAttribute="width" secondItem="Op8-4T-5Ln" secondAttribute="width" id="8dd-Pq-aPQ"/>
+                                        <constraint firstItem="W47-ge-FGo" firstAttribute="centerY" secondItem="Op8-4T-5Ln" secondAttribute="centerY" id="ACh-3Q-Tdp"/>
+                                        <constraint firstItem="W47-ge-FGo" firstAttribute="centerX" secondItem="Op8-4T-5Ln" secondAttribute="centerX" id="DKg-7v-9MG"/>
+                                        <constraint firstAttribute="height" constant="24" id="mV8-iR-YTb"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vLI-85-ebT" userLabel="Genders">
+                    <rect key="frame" x="190" y="312" width="180" height="113"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="JNs-lW-pHK">
+                            <rect key="frame" x="0.0" y="0.0" width="85" height="113"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NPK-u4-KcP" userLabel="Top">
+                                    <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jp-bn-Ql4" userLabel="Progress" customClass="UICircularProgressRing" customModule="UICircularProgressRing">
+                                            <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <viewLayoutGuide key="safeArea" id="gDo-Ur-pkq"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="NPK-u4-KcP" secondAttribute="height" multiplier="1:1" id="7mF-dx-k5N"/>
+                                        <constraint firstAttribute="trailing" secondItem="0jp-bn-Ql4" secondAttribute="trailing" id="FRr-FC-IY3"/>
+                                        <constraint firstAttribute="bottom" secondItem="0jp-bn-Ql4" secondAttribute="bottom" id="ewf-PL-X6b"/>
+                                        <constraint firstAttribute="width" priority="750" constant="70" id="gNs-H7-KlG"/>
+                                        <constraint firstItem="0jp-bn-Ql4" firstAttribute="top" secondItem="NPK-u4-KcP" secondAttribute="top" id="nwg-iC-SFv"/>
+                                        <constraint firstItem="0jp-bn-Ql4" firstAttribute="leading" secondItem="NPK-u4-KcP" secondAttribute="leading" id="xnQ-jj-hWv"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8G1-Qo-i5b" userLabel="Down">
+                                    <rect key="frame" x="0.0" y="89" width="85" height="24"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="male" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FOw-GB-jXR" customClass="UILocalizedLabel" customModule="VideoFace" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="4.5" width="85" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="FOi-xL-zyP"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="01y-VF-1uV"/>
+                                        <constraint firstItem="FOw-GB-jXR" firstAttribute="centerX" secondItem="8G1-Qo-i5b" secondAttribute="centerX" id="cfK-MG-NLk"/>
+                                        <constraint firstItem="FOw-GB-jXR" firstAttribute="width" secondItem="8G1-Qo-i5b" secondAttribute="width" id="fLt-P2-3pS"/>
+                                        <constraint firstItem="FOw-GB-jXR" firstAttribute="centerY" secondItem="8G1-Qo-i5b" secondAttribute="centerY" id="hTZ-fY-bmg"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="O5j-qN-xib">
+                            <rect key="frame" x="95" y="0.0" width="85" height="113"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kh1-9L-95j" userLabel="Top">
+                                    <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9R0-xF-hD5" userLabel="Progress" customClass="UICircularProgressRing" customModule="UICircularProgressRing">
+                                            <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <viewLayoutGuide key="safeArea" id="v70-tp-hQD"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="9R0-xF-hD5" firstAttribute="leading" secondItem="kh1-9L-95j" secondAttribute="leading" id="6rA-NU-CJf"/>
+                                        <constraint firstAttribute="bottom" secondItem="9R0-xF-hD5" secondAttribute="bottom" id="Hnt-1x-EDL"/>
+                                        <constraint firstAttribute="trailing" secondItem="9R0-xF-hD5" secondAttribute="trailing" id="aU5-2n-ZC3"/>
+                                        <constraint firstAttribute="width" priority="750" constant="70" id="kPd-pt-5Sw"/>
+                                        <constraint firstAttribute="width" secondItem="kh1-9L-95j" secondAttribute="height" multiplier="1:1" id="pYE-9J-TsC"/>
+                                        <constraint firstItem="9R0-xF-hD5" firstAttribute="top" secondItem="kh1-9L-95j" secondAttribute="top" id="x7R-rg-2wW"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="08Z-Gz-adO" userLabel="Down">
+                                    <rect key="frame" x="0.0" y="89" width="85" height="24"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="female" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="afH-yd-zGw" customClass="UILocalizedLabel" customModule="VideoFace" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="4.5" width="85" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="eR4-Zl-3go"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="9Jn-vz-SBs"/>
+                                        <constraint firstItem="afH-yd-zGw" firstAttribute="width" secondItem="08Z-Gz-adO" secondAttribute="width" id="gPm-cU-sy3"/>
+                                        <constraint firstItem="afH-yd-zGw" firstAttribute="centerY" secondItem="08Z-Gz-adO" secondAttribute="centerY" id="l7K-mU-R36"/>
+                                        <constraint firstItem="afH-yd-zGw" firstAttribute="centerX" secondItem="08Z-Gz-adO" secondAttribute="centerX" id="xDe-gT-O7h"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cdJ-JS-aE7" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="0PU-aa-M0v"/>
+                <constraint firstItem="JNs-lW-pHK" firstAttribute="width" secondItem="S6I-1c-aT6" secondAttribute="width" id="0bh-cU-jUg"/>
+                <constraint firstItem="vLI-85-ebT" firstAttribute="top" secondItem="cdJ-JS-aE7" secondAttribute="bottom" priority="750" constant="8" id="CFy-Fe-Hu5"/>
+                <constraint firstItem="cdJ-JS-aE7" firstAttribute="top" secondItem="N4c-pD-xZC" secondAttribute="bottom" priority="750" constant="8" id="JDA-aT-kjQ"/>
+                <constraint firstItem="N4c-pD-xZC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Q2u-VD-HxX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="N4c-pD-xZC" secondAttribute="trailing" id="TGi-Er-erE"/>
+                <constraint firstItem="cdJ-JS-aE7" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="aAc-7B-G7e"/>
+                <constraint firstItem="vLI-85-ebT" firstAttribute="centerX" secondItem="cdJ-JS-aE7" secondAttribute="centerX" id="ano-7I-zeL"/>
+                <constraint firstItem="N4c-pD-xZC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="meE-7d-cy0"/>
+                <constraint firstItem="eSz-2g-xu5" firstAttribute="width" secondItem="S6I-1c-aT6" secondAttribute="width" id="omb-1e-QqX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="vLI-85-ebT" secondAttribute="bottom" id="rhb-vE-FbQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="stackView" destination="N4c-pD-xZC" id="kdk-6k-5I9"/>
+                <outletCollection property="genderLabels" destination="FOw-GB-jXR" collectionClass="NSMutableArray" id="4Fn-re-9Ne"/>
+                <outletCollection property="genderLabels" destination="afH-yd-zGw" collectionClass="NSMutableArray" id="icm-my-JCp"/>
+                <outletCollection property="ageLabels" destination="JBw-un-Vlc" collectionClass="NSMutableArray" id="JUJ-uZ-pIk"/>
+                <outletCollection property="ageLabels" destination="WoO-Rn-DTT" collectionClass="NSMutableArray" id="8SO-44-fGM"/>
+                <outletCollection property="ageLabels" destination="cEi-TX-c1Z" collectionClass="NSMutableArray" id="BD2-vL-dKB"/>
+                <outletCollection property="ageLabels" destination="W47-ge-FGo" collectionClass="NSMutableArray" id="2cY-wm-QLf"/>
+                <outletCollection property="emotionLabels" destination="IbG-wC-eLC" collectionClass="NSMutableArray" id="Rvs-mB-flG"/>
+                <outletCollection property="emotionLabels" destination="k0c-st-AM7" collectionClass="NSMutableArray" id="kEL-ho-YoM"/>
+                <outletCollection property="emotionLabels" destination="toQ-Qb-tLJ" collectionClass="NSMutableArray" id="PQe-hI-CY4"/>
+                <outletCollection property="emotionLabels" destination="kGX-XR-QnB" collectionClass="NSMutableArray" id="WZH-oK-2p9"/>
+                <outletCollection property="emotionLabels" destination="eO5-No-MgG" collectionClass="NSMutableArray" id="16o-aB-OMo"/>
+                <outletCollection property="emotionLabels" destination="9ya-af-fNv" collectionClass="NSMutableArray" id="Rn9-No-mus"/>
+                <outletCollection property="ageProgress" destination="h37-ht-2OH" collectionClass="NSMutableArray" id="HFT-rI-7NZ"/>
+                <outletCollection property="ageProgress" destination="zfN-1K-SWl" collectionClass="NSMutableArray" id="KFr-9n-3oc"/>
+                <outletCollection property="ageProgress" destination="Z7Z-5L-yNe" collectionClass="NSMutableArray" id="nEt-eE-iyo"/>
+                <outletCollection property="ageProgress" destination="ZpT-Yx-9Wh" collectionClass="NSMutableArray" id="bUP-Wv-wCB"/>
+                <outletCollection property="emotionProgress" destination="pxe-UT-1kD" collectionClass="NSMutableArray" id="myP-Zb-5rY"/>
+                <outletCollection property="genderProgress" destination="0jp-bn-Ql4" collectionClass="NSMutableArray" id="bJN-il-NuM"/>
+                <outletCollection property="genderProgress" destination="9R0-xF-hD5" collectionClass="NSMutableArray" id="hLh-XY-9YW"/>
+                <outletCollection property="emotionProgress" destination="iW8-Oq-Dof" collectionClass="NSMutableArray" id="fRw-Ee-On1"/>
+                <outletCollection property="emotionProgress" destination="FPA-OM-1Ah" collectionClass="NSMutableArray" id="Lhd-bj-5Dt"/>
+                <outletCollection property="emotionProgress" destination="3Pl-WA-nK7" collectionClass="NSMutableArray" id="Vbn-JQ-ajV"/>
+                <outletCollection property="emotionProgress" destination="Cs5-Rs-Q8J" collectionClass="NSMutableArray" id="KK7-so-bXc"/>
+                <outletCollection property="emotionProgress" destination="g1U-Fw-fhj" collectionClass="NSMutableArray" id="cxT-SB-VJX"/>
+            </connections>
+            <point key="canvasLocation" x="-16" y="-4.0479760119940034"/>
+        </view>
+    </objects>
+</document>

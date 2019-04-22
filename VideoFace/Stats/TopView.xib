@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-ExtraBold.ttf">
+            <string>Raleway-ExtraBold</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TopView" customModule="VideoFace" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="52"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MH8-u8-fqv">
+                    <rect key="frame" x="12" y="0.0" width="396" height="52"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="123" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUW-3C-geh" userLabel="count">
+                            <rect key="frame" x="10" y="0.0" width="376" height="31"/>
+                            <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="26"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="faces" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="el8-8C-80U" userLabel="faces" customClass="UILocalizedLabel" customModule="VideoFace" customModuleProvider="target">
+                            <rect key="frame" x="179.5" y="35" width="37" height="17"/>
+                            <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="VUW-3C-geh" firstAttribute="leading" secondItem="MH8-u8-fqv" secondAttribute="leading" constant="10" id="45R-bZ-RsX"/>
+                        <constraint firstItem="el8-8C-80U" firstAttribute="centerX" secondItem="MH8-u8-fqv" secondAttribute="centerX" id="7gb-sc-kUJ"/>
+                        <constraint firstItem="el8-8C-80U" firstAttribute="top" secondItem="VUW-3C-geh" secondAttribute="bottom" constant="4" id="SGa-SB-dXh"/>
+                        <constraint firstItem="VUW-3C-geh" firstAttribute="top" secondItem="MH8-u8-fqv" secondAttribute="top" id="ZoV-yr-uU5"/>
+                        <constraint firstItem="VUW-3C-geh" firstAttribute="centerX" secondItem="MH8-u8-fqv" secondAttribute="centerX" id="aHk-AO-RnI"/>
+                        <constraint firstAttribute="trailing" secondItem="VUW-3C-geh" secondAttribute="trailing" constant="10" id="mPI-Po-dsu"/>
+                        <constraint firstAttribute="bottom" secondItem="el8-8C-80U" secondAttribute="bottom" id="uz3-JT-15j"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="MH8-u8-fqv" secondAttribute="bottom" priority="750" id="8aP-H6-2JA"/>
+                <constraint firstItem="MH8-u8-fqv" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="OvS-9B-43U"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MH8-u8-fqv" secondAttribute="trailing" constant="12" id="e4K-9n-uoN"/>
+                <constraint firstItem="MH8-u8-fqv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" priority="750" id="xNE-Gl-6mB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="countLabel" destination="VUW-3C-geh" id="Jbn-Zk-gPZ"/>
+                <outlet property="viewsLabel" destination="el8-8C-80U" id="AOS-K8-Nxa"/>
+            </connections>
+            <point key="canvasLocation" x="-46.399999999999999" y="-11.694152923538232"/>
+        </view>
+    </objects>
+</document>

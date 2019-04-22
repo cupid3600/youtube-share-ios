@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  VideoFace
+
+  Created by Marco Rossi on 19/11/2018.
+  Copyright © 2018 CYNNY. All rights reserved.
+*/
+
+/* Videos */
+"No_videos" = "Apri YouTube e condividi un video con VideoFace. Vedrai le smorfie di chi lo guarda!";
+"Open_youtube" = " APRI YOUTUBE";
+
+/* Stats */
+"No_connection" = "Whoops! Controlla di essere connesso ad internet. Tocca per riprovare"; 
+"No_data" = "Nessuno ha ancora visto il video. Condividilo di nuovo!";
+
+"views" = "VISUALIZZAZIONI";
+"face" = "FACCIA";
+"faces" = "FACCE";
+
+"Anger" = "Rabbia";
+"Disgust" = "Disgusto";
+"Fear" = "Paura";
+"Sad" = "Tristezza";
+"Surprise" = "Sorpresa";
+"Rested" = "Neutrale";
+"Happy" = "Felicità";
+
+"male" = "Maschio";
+"female" = "Femmina";
+
+/* Share */
+"cancel" = "Annulla";
+"share" = "Condividi";

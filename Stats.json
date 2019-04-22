@@ -1,0 +1,574 @@
+[
+  {
+    "counter": 1,
+    "v_time": 0,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.5,
+      "anger": 0.5,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 1,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.2,
+      "anger": 0.5,
+      "disgust": 0.3,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 2,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.0,
+      "anger": 0.5,
+      "disgust": 0.5,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 3,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.2,
+      "anger": 0.2,
+      "disgust": 0.2,
+      "fear": 0.2,
+      "sadness": 0.2,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 12,
+    "v_time": 4,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 12
+    },
+    "emotions": {
+      "happiness": 0.0,
+      "anger": 6.0,
+      "disgust": 6.0,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 12
+    }
+  },
+  {
+      "counter": 12,
+      "v_time": 4,
+      "u_time": 1538553545148,
+      "genders": {
+          "female": 12
+      },
+      "emotions": {
+          "happiness": 6.0,
+          "anger": 6.0,
+          "disgust": 0.0,
+          "fear": 0.0,
+          "sadness": 0.0,
+          "rested": 0.0,
+          "surprise": 0.0
+      },
+      "source": "www.pippo.com",
+      "url_id": "pippo",
+      "ages": {
+          "35": 12
+      }
+  },
+  {
+    "counter": 1,
+    "v_time": 5,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.5,
+      "anger": 0.5,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 6,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.5,
+      "anger": 0.5,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 7,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.5,
+      "anger": 0.5,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 8,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.5,
+      "anger": 0.5,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 9,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.0,
+      "anger": 0.5,
+      "disgust": 0.5,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 10,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.5,
+      "anger": 0.5,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 13,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.5,
+      "anger": 0.5,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 14,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.0,
+      "anger": 0.5,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.5
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 15,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.2,
+      "anger": 0.2,
+      "disgust": 0.2,
+      "fear": 0.2,
+      "sadness": 0.2,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 16,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.5,
+      "anger": 0.5,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 17,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.5,
+      "anger": 0.5,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 18,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.2,
+      "anger": 0.2,
+      "disgust": 0.2,
+      "fear": 0.2,
+      "sadness": 0.2,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 19,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.5,
+      "anger": 0.5,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 20,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.5,
+      "anger": 0.5,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 21,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.5,
+      "anger": 0.5,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 22,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.2,
+      "anger": 0.2,
+      "disgust": 0.2,
+      "fear": 0.2,
+      "sadness": 0.2,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 28,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.5,
+      "anger": 0.5,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 29,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.5,
+      "anger": 0.5,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 30,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.5,
+      "anger": 0.5,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "sadness": 0.0,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  },
+  {
+    "counter": 1,
+    "v_time": 31,
+    "u_time": 1538553545148,
+    "genders": {
+      "female": 1
+    },
+    "emotions": {
+      "happiness": 0.2,
+      "anger": 0.2,
+      "disgust": 0.2,
+      "fear": 0.2,
+      "sadness": 0.2,
+      "rested": 0.0,
+      "surprise": 0.0
+    },
+    "source": "www.pippo.com",
+    "url_id": "pippo",
+    "ages": {
+      "35": 1
+    }
+  }
+]

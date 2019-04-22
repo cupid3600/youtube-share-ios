@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="StatViewCell" id="gH2-cH-3QM" customClass="StatViewCell" customModule="VideoFace" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="40" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Rb7-yn-Ryi">
+                        <rect key="frame" x="0.0" y="0.0" width="40" height="69"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lpO-aQ-bll" userLabel="Top">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNe-gN-FIr" userLabel="Circle">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="hNe-gN-FIr" secondAttribute="height" multiplier="1:1" id="cA4-PF-jvo"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aC3-i2-Pxr" userLabel="EmojiContainer">
+                                        <rect key="frame" x="4" y="4" width="32" height="32"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aC3-i2-Pxr" firstAttribute="leading" secondItem="hNe-gN-FIr" secondAttribute="leading" constant="4" id="4Br-kO-hdT"/>
+                                    <constraint firstItem="hNe-gN-FIr" firstAttribute="leading" secondItem="lpO-aQ-bll" secondAttribute="leading" id="Elk-tX-qQZ"/>
+                                    <constraint firstItem="aC3-i2-Pxr" firstAttribute="trailing" secondItem="hNe-gN-FIr" secondAttribute="trailing" constant="-4" id="Skh-Q7-m1e"/>
+                                    <constraint firstItem="hNe-gN-FIr" firstAttribute="top" secondItem="lpO-aQ-bll" secondAttribute="top" id="Ugp-b8-dsP"/>
+                                    <constraint firstItem="aC3-i2-Pxr" firstAttribute="top" secondItem="hNe-gN-FIr" secondAttribute="top" constant="4" id="eWo-OV-xgG"/>
+                                    <constraint firstAttribute="trailing" secondItem="hNe-gN-FIr" secondAttribute="trailing" id="gUn-1a-3Kb"/>
+                                    <constraint firstAttribute="bottom" secondItem="hNe-gN-FIr" secondAttribute="bottom" id="jxG-va-52w"/>
+                                    <constraint firstItem="aC3-i2-Pxr" firstAttribute="bottom" secondItem="hNe-gN-FIr" secondAttribute="bottom" constant="-4" id="xpG-No-PFo"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUM-tD-N0y">
+                                <rect key="frame" x="0.0" y="44" width="40" height="25"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Rb7-yn-Ryi" secondAttribute="trailing" id="45a-HU-FRf"/>
+                <constraint firstItem="Rb7-yn-Ryi" firstAttribute="top" secondItem="gH2-cH-3QM" secondAttribute="top" id="Dad-cM-fW0"/>
+                <constraint firstItem="Rb7-yn-Ryi" firstAttribute="leading" secondItem="gH2-cH-3QM" secondAttribute="leading" id="Os2-he-vdr"/>
+                <constraint firstAttribute="bottom" secondItem="Rb7-yn-Ryi" secondAttribute="bottom" id="tLG-ti-Qis"/>
+            </constraints>
+            <size key="customSize" width="39" height="69"/>
+            <connections>
+                <outlet property="circleView" destination="hNe-gN-FIr" id="mMO-df-owv"/>
+                <outlet property="container" destination="aC3-i2-Pxr" id="tGI-Qk-Geh"/>
+                <outlet property="countLabel" destination="vUM-tD-N0y" id="Tif-0c-lIX"/>
+            </connections>
+            <point key="canvasLocation" x="44" y="20.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

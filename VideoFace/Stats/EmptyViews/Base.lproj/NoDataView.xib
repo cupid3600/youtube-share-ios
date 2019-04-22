@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="g4g-2W-k0X" customClass="NoDataView" customModule="VideoFace" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TfM-dl-HcJ" userLabel="Content">
+                    <rect key="frame" x="20" y="223" width="335" height="241.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_data" translatesAutoresizingMaskIntoConstraints="NO" id="97c-ZX-v7d" userLabel="Image">
+                            <rect key="frame" x="67.5" y="0.0" width="200" height="200"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="7I7-3u-tpG"/>
+                                <constraint firstAttribute="width" secondItem="97c-ZX-v7d" secondAttribute="height" multiplier="1:1" id="Vkp-pN-CeX"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are still no grimaces on this video" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adU-zu-58z" userLabel="Text">
+                            <rect key="frame" x="0.0" y="208" width="335" height="21.5"/>
+                            <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="18"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="97c-ZX-v7d" firstAttribute="centerX" secondItem="TfM-dl-HcJ" secondAttribute="centerX" id="2M7-tK-Ova"/>
+                        <constraint firstAttribute="trailing" secondItem="adU-zu-58z" secondAttribute="trailing" id="IUS-IC-eEc"/>
+                        <constraint firstItem="97c-ZX-v7d" firstAttribute="top" secondItem="TfM-dl-HcJ" secondAttribute="top" id="XcG-9V-e0w"/>
+                        <constraint firstItem="adU-zu-58z" firstAttribute="top" secondItem="97c-ZX-v7d" secondAttribute="bottom" constant="8" id="Xse-vZ-k41"/>
+                        <constraint firstItem="adU-zu-58z" firstAttribute="leading" secondItem="TfM-dl-HcJ" secondAttribute="leading" id="cxB-M6-OUh"/>
+                        <constraint firstAttribute="bottom" secondItem="adU-zu-58z" secondAttribute="bottom" constant="12" id="jWB-dd-WZM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="TfM-dl-HcJ" firstAttribute="centerY" secondItem="ZyP-n1-Qdd" secondAttribute="centerY" id="6Qi-YD-ogf"/>
+                <constraint firstItem="TfM-dl-HcJ" firstAttribute="leading" secondItem="ZyP-n1-Qdd" secondAttribute="leading" constant="20" id="hza-x7-pf8"/>
+                <constraint firstItem="ZyP-n1-Qdd" firstAttribute="trailing" secondItem="TfM-dl-HcJ" secondAttribute="trailing" constant="20" id="m9v-47-kge"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZyP-n1-Qdd"/>
+            <connections>
+                <outlet property="label" destination="adU-zu-58z" id="iox-8T-x9a"/>
+            </connections>
+            <point key="canvasLocation" x="59.200000000000003" y="94.452773613193415"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="no_data" width="410" height="410"/>
+    </resources>
+</document>

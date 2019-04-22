@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoStatsViewController" customModule="VideoFace" customModuleProvider="target">
+            <connections>
+                <outlet property="playerView" destination="XA2-Nh-Elk" id="Sbe-y8-fJW"/>
+                <outlet property="statView" destination="C9E-9v-J0Z" id="1lK-2x-vu9"/>
+                <outlet property="view" destination="3z1-se-MMF" id="WA4-W1-q09"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3z1-se-MMF">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLO-KT-w66" userLabel="Player Container View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XA2-Nh-Elk" userLabel="Player View" customClass="WKYTPlayerView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="XA2-Nh-Elk" firstAttribute="top" secondItem="FLO-KT-w66" secondAttribute="top" id="IZh-eP-mnP"/>
+                        <constraint firstAttribute="trailing" secondItem="XA2-Nh-Elk" secondAttribute="trailing" id="YNN-Rp-NZv"/>
+                        <constraint firstItem="XA2-Nh-Elk" firstAttribute="leading" secondItem="FLO-KT-w66" secondAttribute="leading" id="beE-pR-WpV"/>
+                        <constraint firstAttribute="bottom" secondItem="XA2-Nh-Elk" secondAttribute="bottom" id="c8w-lW-Whx"/>
+                        <constraint firstAttribute="width" secondItem="FLO-KT-w66" secondAttribute="height" multiplier="16:9" id="hXs-PW-WjS"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9E-9v-J0Z" userLabel="Stats View">
+                    <rect key="frame" x="0.0" y="233" width="414" height="503"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="C9E-9v-J0Z" firstAttribute="leading" secondItem="ipz-gL-d9G" secondAttribute="leading" id="0Dc-6a-Ief"/>
+                <constraint firstItem="ipz-gL-d9G" firstAttribute="bottom" secondItem="C9E-9v-J0Z" secondAttribute="bottom" id="7Ln-iJ-5wb"/>
+                <constraint firstItem="ipz-gL-d9G" firstAttribute="top" secondItem="FLO-KT-w66" secondAttribute="top" constant="20" id="Goh-Z6-zkm"/>
+                <constraint firstItem="ipz-gL-d9G" firstAttribute="trailing" secondItem="FLO-KT-w66" secondAttribute="trailing" id="HmD-0d-EK7"/>
+                <constraint firstItem="ipz-gL-d9G" firstAttribute="trailing" secondItem="C9E-9v-J0Z" secondAttribute="trailing" id="PlS-IU-Ceu"/>
+                <constraint firstItem="C9E-9v-J0Z" firstAttribute="top" secondItem="FLO-KT-w66" secondAttribute="bottom" id="XR6-Pi-xvR"/>
+                <constraint firstItem="FLO-KT-w66" firstAttribute="leading" secondItem="ipz-gL-d9G" secondAttribute="leading" id="qeA-iH-KEk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ipz-gL-d9G"/>
+            <point key="canvasLocation" x="-92" y="-41"/>
+        </view>
+    </objects>
+</document>
